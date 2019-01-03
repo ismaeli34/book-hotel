@@ -1,6 +1,5 @@
 const Rental = require('./model/rental');
 class  FakeDb {
-
   constructor(){
     this.rentals = [{
       title: "Nice view on ocean",
