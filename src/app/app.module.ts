@@ -7,7 +7,6 @@ import {HeaderComponent} from './common/header/header.component';
 import {TempComponent} from './temp/temp.component';
 import {RouterModule, Routes} from '@angular/router';
 import {RentalModule} from './rental/rental.module';
-import {RentalComponent} from './rental/rental.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/rentals', pathMatch: 'full'},

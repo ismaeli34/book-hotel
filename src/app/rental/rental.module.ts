@@ -9,6 +9,7 @@ import {RentalDetailsComponent} from './rental-details/rental-details.component'
 import {HttpClientModule} from '@angular/common/http';
 import {NgPipesModule} from 'ngx-pipes';
 import {UpperCasePipe} from '../common/pipes/upper-case.pipe';
+import {MapModule} from '../common/map/map.module';
 
 const rentalRoutes: Routes = [
   {
@@ -35,6 +36,7 @@ const rentalRoutes: Routes = [
     CommonModule,
     HttpClientModule,
     NgPipesModule,
+    MapModule,
     RouterModule.forChild(rentalRoutes)],
   providers: [RentalService],
   bootstrap: []
