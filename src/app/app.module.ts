@@ -7,7 +7,7 @@ import {HeaderComponent} from './common/header/header.component';
 import {TempComponent} from './temp/temp.component';
 import {RouterModule, Routes} from '@angular/router';
 import {RentalModule} from './rental/rental.module';
-import {RentalComponent} from './rental/rental.component';
+import {AuthModule} from './auth/auth.module';
 
 const routes: Routes = [
   {path: '', redirectTo: '/rentals', pathMatch: 'full'},
@@ -24,6 +24,7 @@ const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     RentalModule,
+    AuthModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

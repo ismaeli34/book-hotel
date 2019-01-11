@@ -1,6 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const Rental = require('../model/rental')
+const Rental = require('../model/rental.model');
+const  Userctrl =require('../controllers/user.controller');
+
+
+
+router.get('/secret',Userctrl.authMiddleware,function(req,res){
+  res.json({"secret":true});
+
+});
 
 
 //get All Rental details.

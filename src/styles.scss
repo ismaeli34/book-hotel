@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~font-awesome/css/font-awesome.css";
+
 @import 'variables';
 //@import 'rental-detail';
 
@@ -47,7 +49,7 @@ html, body, p {
   background-color: $main-color;
   border-color: $main-color;
   color: white;
-  padding: 15px 30px;
+  padding: 10px 30px;
   font-size: 20px;
 
   &:hover, &:focus, &:active {
@@ -117,3 +119,48 @@ html, body, p {
 }
 
 
+.bwm-form {
+  color: $main-text-color;
+
+  form {
+    margin-bottom: 10px;
+  }
+
+  .alert {
+    p {
+      margin: 0;
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .image-container {
+    position: relative;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .form-text {
+    font-size: 13px;
+  }
+
+  .catchphrase {
+    text-align: center;
+    font-size: 42px;
+    position: absolute;
+    color: #f1f1f1;
+    padding: 40px;
+    background-color: rgba(0,0,0, 0.5);
+    margin-top: 50px;
+    letter-spacing: 1px;
+  }
+}
